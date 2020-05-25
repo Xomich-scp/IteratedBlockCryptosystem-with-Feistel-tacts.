@@ -1,1 +1,4 @@
-﻿
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (01.vcxproj, 01_Encrypt.vcxproj, 04_Ofb.vcxproj, 06.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  06.cpp
+D:\Study\4_1_PAST\PAIN\2\Crypt_lab_02_03_var_02\06\06.cpp(44,37): warning C4267:  инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  04_Ofb.vcxproj -> D:\Study\4_1_PAST\PAIN\2\Crypt_lab_02_03_var_02\x64\Debug\06_and_07.exe
