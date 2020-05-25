@@ -1,13 +1,17 @@
 
 #include "lib.h"
 
+/*
+Encrypt/Decrypt routine fo OFB mode.
+*/
+
 void Decrypt_OFB(std::string buffer, std::string& cipher, uint32_t key, uint32_t iv)
 {
 	uint32_t cur_pos = 0;
 	bool flag = true;
 
 	/*
-	produce synch
+	produce synch (aka IV)
 	
 	*/
 
