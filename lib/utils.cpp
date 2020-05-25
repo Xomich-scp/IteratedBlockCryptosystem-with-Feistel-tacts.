@@ -5,6 +5,11 @@
 #include <iomanip> // GetCurrentTime
 #include <bitset> // DisplayUin32IntoGroupsOf4Bits
 
+/*
+
+Some routine to implement big-endian reading/writing and some debug function
+
+*/
 int StringToUint32(std::string block_str, uint32_t & block)
 {
 
