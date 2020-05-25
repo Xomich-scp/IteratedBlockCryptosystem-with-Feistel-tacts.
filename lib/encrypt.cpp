@@ -1,4 +1,11 @@
 #include "lib.h"
+/*
+
+Implemntaton of Crypt part. Here we deal with padding and retrieving new block for crypting. 
+
+For tact's operation see "Fist_Func.cpp"
+
+*/
 
 void Padding(std::string &block, uint32_t len_to_fit)
 {	
