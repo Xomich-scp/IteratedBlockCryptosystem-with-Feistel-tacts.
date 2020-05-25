@@ -1,5 +1,9 @@
 #include "lib.h"
+/*
 
+Same to encrypt.cpp, only decrypt part and unpadding.
+
+*/
 int UnPadding(std::string & block)
 {
 
