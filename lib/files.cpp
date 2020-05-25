@@ -1,5 +1,10 @@
 #include "lib.h"
 
+/*
+
+Read/Write file routine, nothing special
+
+*/
 #include <sstream>
 
 int ReadFile(char * path, std::string & buffer)
