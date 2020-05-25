@@ -1,5 +1,10 @@
 #include "lib.h"
+/*
 
+
+Implementation of tact function.
+
+*/
 #include <vector>
 
 #define CNT_ROUND (4)
@@ -77,10 +82,7 @@ uint16_t roundFunction(uint16_t subBlock, uint16_t key)
 		
 
 	}
-	//71b6
-	//0111 0001 1011 0110
-	//0111 1110 1010 0100
-	//7ea4
+
 
 
     return ultimateResult;
@@ -117,7 +119,7 @@ uint32_t encryptBlock_Fist(uint32_t block, uint32_t key)
     {
         encrypt_decrypt_Block_Fist_one_round(functionResult, key, i);
     }
-	/*if her it work*/
+	/*tau shift*/
 	leftPart = (uint16_t)(functionResult >> 16);
 	rightPart = (uint16_t)((functionResult << 16) >> 16);
 	functionResult = ((uint32_t)rightPart << 16) | leftPart;
@@ -142,7 +144,7 @@ uint32_t decryptBlock_Fist(uint32_t block, uint32_t key)
     {
         encrypt_decrypt_Block_Fist_one_round(functionResult, key, i);
     }
-	/*if her it work*/
+	/*tau shit*/
 	leftPart = (uint16_t)(functionResult >> 16);
 	rightPart = (uint16_t)((functionResult << 16) >> 16);
 	functionResult = ((uint32_t)rightPart << 16) | leftPart;
