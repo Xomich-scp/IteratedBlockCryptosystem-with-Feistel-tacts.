@@ -1,5 +1,8 @@
 #include "lib.h"
 
+/*
+Implementation of whitening tact
+*/
 void EncryptDecryptMakeRound5(uint32_t & y, uint32_t k)
 {
     y = y ^ k;
@@ -18,9 +21,3 @@ void EncryptDecryptBlock_Round5(/*uint32_t x, */uint32_t & y, uint32_t key)
 
     EncryptDecryptMakeRound5(y, ks5);
 }
-/*
-	//second tau-switch
-	leftPart = (uint16_t)(y >> 16);
-	rightPart = (uint16_t)((y << 16) >> 16);
-	y = ((uint32_t)rightPart << 16) | leftPart;
-*/
