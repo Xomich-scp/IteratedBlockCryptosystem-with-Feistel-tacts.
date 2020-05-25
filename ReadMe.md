@@ -1,45 +1,30 @@
-Configure solution
-
-Add in solution folowwing projects
-
-File->Create->Project->Visual C++->Classic application Windows->Static Library
-
-    Project->Options->C/C++->Precomplier headers->No use precompilier headers
-
-    You can delete files: stdafx.cpp, stdafx.h, targetver.h
-
-    Add files and code
-
-File->Create->Project->Visual C++->Empty project
-
-    Refernces->Add refernce->Your project->OK
-
-    Project->Options->C/C++->General->Additional include file directories-> $(SolutionDir)Name_your_project_library
-
-    Add files and code
-
-	For debug: Project->Options->Debug->Working directory (default - $(ProjectDir))->..\Debug
+Visual Studio 2019 project.
 
 Build
 
 E.g. run
 
+Crypt in ECB mode
 01.exe open.txt key.txt encrypted.txt
+
+Decrypt in ECB mode
 02.exe encrypted.txt key.txt decrypted.txt
-fc /b open.txt decrypted.txt
 
-BruteForce.exe open.txt key.txt encrypted.txt
-02.exe encrypted.txt key_founded.txt decrypted.txt
-fc /b open.txt decrypted.txt
-
+Additional tool to count mistake's spreading time 
 NonessentialVar.exe
 
-lab_03_BruteForce.exe open.txt key.txt encrypted.txt
-lab_02_02_Decrypt.exe encrypted.txt key_founded.txt decrypted.txt
-fc /b open.txt decrypted.txt
+Modified bruteforce. Uses simple simple correlation g2Fg1(x) = F(x)
+BruteForce.exe open.txt key.txt encrypted.txt
 
+Crypt/decrypt in OFB mode
 lab_04_OFB.exe -enc open.txt key.txt iv.txt OFB_encrypted.txt
 lab_04_OFB.exe -dec OFB_encrypted.txt key.txt iv.txt OFB_decrypted.txt
-fc /b open.txt OFB_decrypted.txt
 
+Group Analys.
 lab_05_GroupAnalysis.exe
+
+Additional tool, used to generate IV
+Synch_gen.exe
+
+Generate table of linear and differential substution. Example of input file - {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+06_and_07.exe input.txt
