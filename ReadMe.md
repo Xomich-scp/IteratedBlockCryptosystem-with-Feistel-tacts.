@@ -19,6 +19,7 @@ BruteForce.exe open.txt key.txt encrypted.txt
 Crypt/decrypt in OFB mode
 
 lab_04_OFB.exe -enc open.txt key.txt iv.txt OFB_encrypted.txt
+
 lab_04_OFB.exe -dec OFB_encrypted.txt key.txt iv.txt OFB_decrypted.txt
 
 Group Analys.
